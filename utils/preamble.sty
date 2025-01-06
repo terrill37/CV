@@ -1,0 +1,32 @@
+\ProvidesPackage{preamble}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\bfseries}{}{0em}{}{}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+\newcommand{\eduentry}[4]{%
+    \textbf{#1} \hfill #3 \\%
+    \emph{#2} \hfill \textit{#4}%
+}
+
+\newcommand{\researchEntry}[3]{%
+    \textbf{#1} \hfill #2 \\%
+    \emph{#3}
+}
+
+\newcommand{\awardEntry}[3]{%
+    \textbf{#1} \hfill #2 \\%
+    \emph{#3}
+}
+
