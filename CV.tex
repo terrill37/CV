@@ -1,6 +1,9 @@
 \documentclass[a4paper, twoside, english, 12pt]{article}
 \usepackage{utils/preamble}
 
+\usepackage[backend=biber,style=apa]{biblatex}
+\addbibresource{CV.bib}
+
 \begin{document}
 
 \pagestyle{empty}
@@ -88,5 +91,10 @@
 \section*{Awards}
 \awardEntry{Research Scholarship}{2018}{Forrest R. Biard Undergraduate Research Scholarship}\\%
 \awardEntry{Eagle Scout}{2014}{}
+
+\section*{Selected Publications}
+\subsection{In Progress}
+\nocite{*}
+\printbibliography[heading=none]
 
 \end{document}
